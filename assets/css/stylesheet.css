@@ -1,25 +1,26 @@
 body{
-    background-color:rgb(255, 255, 255);
+    background-color:#7a7b7c;
 }
 
 #header{
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #7a7b7c;
+    background-color: green;
     color: #ffffff;
 
 }
 
-#header ul li {
+#header ul li{
     list-style-type:none;
     float:right;
-    margin:1px;
+    margin:1.5px;
     text-indent:30px;
+    font-size:19px;
 }
 
 #header h1 {
-    padding:0px;
-    margin:0px;
+    padding:1px;
+    margin:4px;
     font-size:40px;
     color:Black;
 }
@@ -31,7 +32,6 @@ body{
     object-fit:cover;
 }
 
-
 #container{
     border-left:solid 200px grey;
     padding: 0px;
@@ -39,18 +39,40 @@ body{
     margin:-8px 2px 2px 2px;
 }
 
-.liclass{
+.middle{
     list-style-type:none;
-    display:flex;
-    flex-direction:column;
     justify-content:space-between;
     height:100px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style:verdana;
     font-size:30px;
     z-index:1;
     position:absolute;
-    line-height:4.5em;
+    line-height:10em;
     left:-10px;
-    top:250px;
+    top:280px;
+}
+
+.About-Me {
+    padding:0%;
+    margin:10px;
+    background-color:green
+}
+
+#cssimage{
+    width:200px;
+    height:auto;
+}
+#javaword{
+    width:200px;
+    height:auto;
+}
+
+#cplus{
+    width:200px;
+    height:auto;
+}
+
+#htmllogo{
+    width:200px;
+    height:auto;
 }
