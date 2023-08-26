@@ -1,19 +1,29 @@
+:root {
+    --background:#7a7b7c;
+}
+
 body{
     background-color:#7a7b7c;
 }
 
 #header{
-    padding: 20px;
+    position:relative;
+    margin-left:-7.9px;
+    margin-right:-7.9px;
+    top:-7px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: green;
+    background-color: black;
     color: #ffffff;
-
 }
 
-#header ul li{
+header ul {
+    position:absolute;;
     list-style-type:none;
     float:right;
     margin:1.5px;
+    display:flex;
+    top:180px;
+    left:900px;
     text-indent:30px;
     font-size:19px;
 }
@@ -22,9 +32,8 @@ body{
     padding:1px;
     margin:4px;
     font-size:40px;
-    color:Black;
+    color:Green;
 }
-
 #imageofme{
     border-radius: 50%;
     padding:5px;
@@ -32,47 +41,106 @@ body{
     object-fit:cover;
 }
 
-#container{
-    border-left:solid 200px grey;
-    padding: 0px;
-    height:700px;
-    margin:-8px 2px 2px 2px;
-}
 
 .middle{
     list-style-type:none;
-    justify-content:space-between;
-    height:100px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size:30px;
+    position:relative;
+}
+
+article div {
+    background-color:var(--background);
+}
+
+article #About-Me h1{
+    top:200px;
+    position:relative;
+    
+}
+article #fix {
+    position:relative;
+    text-align:center;
+    font-size:smaller;
+    top:200px;
+    right:10px;
+}
+
+article #Work h1 {
+    top:350px;
+    position:relative;
+}
+article #Contact-Me h1 {
+    top:1100px;
+    position:relative;
+}
+article div h1{
     z-index:1;
+    text-align:left;
+}
+
+
+.cssimage {
+    
+    left: 100px;
+    bottom:-600px;
+    width:500px;
     position:absolute;
-    line-height:10em;
-    left:-10px;
-    top:280px;
 }
 
-.About-Me {
-    padding:0%;
-    margin:10px;
-    background-color:green
+.cplus {
+    left:100px;
+    bottom:-900px;
+    width:500px;
+    position:absolute;
+}
+.javaword{
+    left:700px;
+    width:500px;
+    bottom:-600px;
+    position:absolute;
+}
+.htmllogo{
+    left:700px;
+    width:500px;
+    bottom:-900px;
+    position:absolute;
 }
 
-#cssimage{
-    width:200px;
-    height:auto;
-}
-#javaword{
-    width:200px;
-    height:auto;
-}
-
-#cplus{
-    width:200px;
-    height:auto;
+#logoone{
+    position:absolute;
+    margin:0;
+    background-color:green;
+    z-index:1;
+    left:100px;
+    bottom:-600px;
 }
 
-#htmllogo{
-    width:200px;
-    height:auto;
+#logotwo{
+    margin:0px;
+    background-color:green;
+    z-index:1;
+    left:700px;
+    bottom:-600px;
+    position:absolute;
 }
+
+#logothree {
+    margin:0;
+    background-color: green;
+    z-index:1;
+    left:100px;
+    bottom:-900px;
+    position:absolute;
+}
+
+#logofour{
+    padding:0;
+    margin:0;
+    background-color:green;
+    z-index:1;
+    left:700px;
+    bottom:-900px;
+    position:absolute;
+}
+
