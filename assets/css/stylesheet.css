@@ -1,5 +1,6 @@
 :root {
     --background:#7a7b7c;
+    --backtwo:#ADD8E6;
 }
 
 body{
@@ -16,14 +17,16 @@ body{
     color: #ffffff;
 }
 
+/*There is a resume and it's coding in the HTML is correct, but i have no resume to submit*/
 header ul {
-    position:absolute;;
+    position:absolute;
     list-style-type:none;
     float:right;
     margin:1.5px;
     display:flex;
-    top:180px;
-    left:900px;
+    flex-wrap:row;
+    top:190px;
+    right:0px;
     text-indent:30px;
     font-size:19px;
 }
@@ -70,9 +73,9 @@ article #Work h1 {
     top:350px;
     position:relative;
 }
-article #Contact-Me h1 {
-    top:1100px;
-    position:relative;
+.layout #ContactMe h1 {
+    bottom:1px;
+    position:absolute;
 }
 article div h1{
     z-index:1;
@@ -80,67 +83,65 @@ article div h1{
 }
 
 
-.cssimage {
-    
-    left: 100px;
-    bottom:-600px;
-    width:500px;
-    position:absolute;
+.container div img{
+    position:relative;
+    top:500px;
+    width:450px;
 }
 
-.cplus {
-    left:100px;
-    bottom:-900px;
-    width:500px;
-    position:absolute;
+.container div #test img {
+    left:320px;
+    width:800px;
 }
-.javaword{
-    left:700px;
-    width:500px;
-    bottom:-600px;
-    position:absolute;
-}
-.htmllogo{
-    left:700px;
-    width:500px;
-    bottom:-900px;
-    position:absolute;
-}
-
 #logoone{
     position:absolute;
-    margin:0;
     background-color:green;
     z-index:1;
-    left:100px;
-    bottom:-600px;
+    left:320px;
+    bottom: -235px;
 }
 
 #logotwo{
-    margin:0px;
     background-color:green;
     z-index:1;
-    left:700px;
-    bottom:-600px;
+    left:3px;
+    bottom:-500px;
     position:absolute;
 }
 
 #logothree {
-    margin:0;
-    background-color: green;
+    background-color:green;
     z-index:1;
-    left:100px;
-    bottom:-900px;
+    left:459px;
+    bottom:-500px;
     position:absolute;
 }
 
 #logofour{
-    padding:0;
-    margin:0;
     background-color:green;
     z-index:1;
-    left:700px;
-    bottom:-900px;
+    right:497px;
+    bottom:-500px;
     position:absolute;
 }
 
+.layout{
+    position:relative;
+    width: 95%;
+    display:flex;
+    flex-direction:row;
+    gap: 0px;
+    justify-content: center;
+    top:700px;
+    left:100px;
+
+  }
+    .grow1 { 
+    flex-grow: 1; 
+}
+
+@media only screen and(max-width: 1000x) {
+    body{
+        background-color:var(--backtwo);
+    }
+  }
