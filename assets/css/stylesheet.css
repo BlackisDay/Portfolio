@@ -86,54 +86,56 @@ article div h1{
 .container div img{
     position:relative;
     top:500px;
-    width:450px;
+    left:50px;
+    width:30%;
 }
 
 .container div #test img {
     left:320px;
-    width:800px;
+    width:50%;
 }
 #logoone{
     position:absolute;
     background-color:green;
     z-index:1;
-    left:320px;
-    bottom: -235px;
+    left:21.3%;
+    bottom:-21.5%;
 }
 
 #logotwo{
     background-color:green;
     z-index:1;
-    left:3px;
-    bottom:-500px;
+    left:3.3%;
+    bottom:-45.6%;
     position:absolute;
 }
 
 #logothree {
     background-color:green;
     z-index:1;
-    left:459px;
-    bottom:-500px;
+    left:34%;
+    bottom:-45.5%;
     position:absolute;
 }
 
 #logofour{
     background-color:green;
     z-index:1;
-    right:497px;
-    bottom:-500px;
+    right:29.5%;
+    bottom:-45.6%;
     position:absolute;
 }
 
 .layout{
     position:relative;
     width: 95%;
+    bottom:90%;
+    left:5%;
+    gap: 0px;
     display:flex;
     flex-direction:row;
-    gap: 0px;
     justify-content: center;
-    top:700px;
-    left:100px;
+    
 
   }
     .grow1 { 
