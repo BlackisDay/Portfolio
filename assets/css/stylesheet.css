@@ -84,18 +84,19 @@ article div h1{
 
 
 .container div img{
-    position:relative;
+    position:sticky;
     top:500px;
     left:50px;
     width:30%;
 }
 
 .container div #test img {
+    position:sticky;
     left:320px;
     width:50%;
 }
 #logoone{
-    position:absolute;
+    position:sticky;
     background-color:green;
     z-index:1;
     left:21.3%;
@@ -107,7 +108,7 @@ article div h1{
     z-index:1;
     left:3.3%;
     bottom:-45.6%;
-    position:absolute;
+    position:sticky;
 }
 
 #logothree {
@@ -115,7 +116,7 @@ article div h1{
     z-index:1;
     left:34%;
     bottom:-45.5%;
-    position:absolute;
+    position:fixed;
 }
 
 #logofour{
@@ -123,11 +124,11 @@ article div h1{
     z-index:1;
     right:29.5%;
     bottom:-45.6%;
-    position:absolute;
+    position:fixed;
 }
 
 .layout{
-    position:relative;
+    position:fixed;
     width: 95%;
     bottom:90%;
     left:5%;
@@ -142,8 +143,10 @@ article div h1{
     flex-grow: 1; 
 }
 
-@media only screen and(max-width: 1000x) {
+@media screen and(max-width: 1000x) {
     body{
         background-color:var(--backtwo);
     }
+
   }
+  
