@@ -8,10 +8,10 @@ body{
 }
 
 #header{
-    position:absolute;
-    margin-left:-0.6%;
-    margin-right:-10%;
-    top:-7px;
+    position:relative;
+    margin-left:-0.9%;
+    margin-right:-0.6%;
+    bottom:12px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: black;
     color: #ffffff;
@@ -32,8 +32,11 @@ header ul {
 }
 
 #header h1 {
+    position:absolute;
     padding:4%;
     margin:1%;
+    bottom:12%;
+    left:5%;
     font-size:40px;
     color:Green;
 }
