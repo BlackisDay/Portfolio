@@ -120,10 +120,8 @@ footer {
     text-indent:50px;
     top:800px;
   }
-@media screen and(max-width: 0x) {
-    body{
-        background-color:var(--backtwo);
-    }
-
+  @media screen and (min-width: 480px) and (max-width:900px) {
+    body {
+      background-color: lightgreen
   }
-  
+  }
