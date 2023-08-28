@@ -19,14 +19,13 @@ body{
 
 /*There is a resume and it's coding in the HTML is correct, but i have no resume to submit*/
 header ul {
-    position:sticky;
+    position:relative;
     list-style-type:none;
-    float:right;
     margin:0%;
     display:flex;
     flex-wrap:row;
     top:50%;
-    right:0%;
+    left:68%;
     text-indent:19px;
     font-size:150%;
 }
@@ -54,116 +53,74 @@ header ul {
     font-size:30px;
     position:relative;
 }
+
+article div#About-Me{
+    position:relative;
+}
+
 article #About-Me h1{
-    bottom:105%;
-    position:absolute;
+    bottom:90%;
+    position:relative;
     
 }
-article #fix {
+article #About-Me + p {
     position:absolute;
     text-align:center;
     font-size:smaller;
-    bottom:100%;
+    bottom:80%;
     right:1%;
 }
 
 article #Work h1 {
-    bottom:90%;
-    position:absolute;
+    bottom:80%;
+    position:relative;
 }
 .container {
     position:relative;
-    z-index:1;
 }
-.container div #testtwo img{
+.container .testtwo img{
     position:absolute;
-    right:3%;
-    bottom:55%;
+    top:400px;
+    left:1%;
+    width:30%
+}
+
+.container .test img {
+    position:absolute;
+    left:25%;
+    top:-60px;
+    width:50%;
+}
+.container .testthree img {
+    position:absolute;
+    top:400px;
+    left:36%;
     width:30%;
 }
 
-.container div #test img {
+.container .testfour a img{
     position:absolute;
-    bottom:70%;
-    right:35%;
+    top:400px;
+    left:70%;
     width:30%;
-}
-.container div #testthree img {
-    position:absolute;
-    bottom:55%;
-    right:35%;
-    width:30%;
-}
-
-.container div #testfour img{
-    position:absolute;
-    bottom:55%;
-    right:68%;
-    width:32%;
 
 }
-
-.therelatives{
-    position:relative;
-    z-index:1;
-}
-#logoone{
-    position:relative;
-    margin:47%;
-    background-color:green;
-    left:20%;
-    bottom:30.5%;
-}
-
-#logotwo{
-    position:relative;
-    background-color:green;
-    margin:47%;
-    left:3.3%;
-    bottom:10.6%;
-}
-
-#logothree {
-    position:relative;
-    background-color:green;
-    margin:47%;
-    left:34%;
-    bottom:10.5%;
-}
-
-#logofour{
-    position:relative;
-    background-color:green;
-    margin:47%;
-    padding:0;
-    right:29.5%;
-    bottom:10.6%;
-}
-
 
 footer {
     position:relative;
 }
-.layout{
-    width: 95%;
-    bottom:40%;
-    left:5%;
-    gap: 0px;
+.layout .ContactMe{
+    position:absolute;
+    top: 700px;
+  }
+  .grow1{
+    position:absolute;
     display:flex;
     flex-direction:row;
-    justify-content: center;
-    position:absolute;
-    
-
+    text-indent:50px;
+    top:800px;
   }
-  .layout #ContactMe h1 {
-    bottom:40%;
-    position:absolute;
-  }
-    .grow1 { 
-    flex-grow: 1; 
-}
-@media screen and(max-width: 1000x) {
+@media screen and(max-width: 0x) {
     body{
         background-color:var(--backtwo);
     }
