@@ -1,139 +1,76 @@
 :root {
-    --background:#7a7b7c;
-    --backtwo:#ADD8E6;
+  --bg:rgb(126, 124, 124);
+  --bg1:lightgreen;
 }
-
 body{
-    vertical-align:baseline;
-    background-color:#7a7b7c;
+    background-color:var(--bg);
 }
-
-#header{
+/* The Beginning of the NavBar/Header */
+.Top{
     position:relative;
-    margin-left:-0.9%;
-    margin-right:-0.6%;
-    bottom:12px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: black;
-    color: #ffffff;
+    background-color:var(--bg1);
+    overflow:hidden;
 }
 
-/*There is a resume and it's coding in the HTML is correct, but i have no resume to submit*/
-header ul {
-    position:absolute;
+.Top ul {
+    position:sticky;
     list-style-type:none;
-    margin:0;
+    text-decoration:none;
     display:flex;
     flex-direction:row;
-    top:10vh;
-    left:100vh;
-    text-indent:19px;
-    font-size:150%;
+    justify-content:right;
+    font-size:130%;
+    padding:1%;
+    margin:-1%;
 }
 
-#header h1 {
-    position:absolute;
-    padding:4%;
-    margin:1%;
-    bottom:12%;
-    left:5%;
-    font-size:40px;
-    color:Green;
-}
-#imageofme{
-    border-radius: 50%;
-    padding:5px;
-    width:10%;
-    object-fit:cover;
+.Top > a {
+    position:relative;
+    color:Black;
 }
 
-.middle {
-    list-style-type:none;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size:30px;
-
+.Top div h1 {
+    position:sticky;
+    left:10%;
+    bottom:10vh;
+    font-size:4vh;
+    overflow:hidden;
 }
 
-.me{
+#The-Beginning p{
+    position:relative;
+    max-width:80%;
+    max-height:40%;
+}
+
+.wrap{
+    position:sticky;
     display:flex;
     flex-direction:column;
-    justify-content:space-between;
-}
-.flexthis{
-    display:flex;
-    flex-direction:column;
-    top:500px;
-}
-
-.flexing{
-  position:relative;
-  bottom:300px;
-  padding:9px;
-  width: 100px;
-  height:400px;
-  margin-top:400px;
-  margin-bottom:400px;
-}
-#fix{
-    position:relative;
-    font-size:80%;
-    bottom:105vh;
-    display:flex;
-    flex-wrap:wrap;
+    padding:0;
+    margin-top:20%;
+    margin-bottom:20%;
+    gap:300px;
+    bottom:30vh;
 }
 
-#Work {
-    position:relative;
-    bottom:25vh;
-    min
-}
-.container{
+.wrap > #Aboutme{
     position:absolute;
-    display:flex;
-    flex-direction:row;
-    justify-content:space-evenly;
-    top:170%;
+    top:30vh;
 }
-.container img{
-    position:relative;
-    width:80%;
-    height:60%;
-    bottom:55vh;
-}
-
-.container #test img{
+#Work{
     position:absolute;
-    bottom:80vh;
-    width:90%;
-    height:150%;
+    bottom:10vh;
 }
-
-#test2 img{
-    position:relative;
-    width:90%;
-    height:100%;
-}
-#test3 img{
-    position:relative;
-    width:50%;
-    height:100%;
-}
-#test4 img{
-    position:relative;
-    width:140%;
-    right:100%;
-    height:100%;
-}
-.grow1{
+#ContactMe{
     position:absolute;
-    display:flex;
-    flex-direction:row;
-    text-indent:50px;
-    top:150vh;
-    right:10%;
-  }
-  @media only screen and (min-width: 480px) and (max-width:900px) {
-    body {
-      background-color: lightgreen
-  }
-  }
+    bottom:10vh;
+}
+#Middle img{
+    overflow:hidden;
+    position:absolute;
+    width:600px;
+    height:600px;
+    top:50vh;
+    z-index:-1;
+}
