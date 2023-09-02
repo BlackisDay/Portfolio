@@ -1,150 +1,176 @@
 :root {
   --bg:rgb(126, 124, 124);
-  --bg1:lightgreen;
 }
+
+*{
+    margin:0;
+}
+
 body{
-    max-width:100%;
-    max-height:100%;
-    background-color:var(--bg);
+    background-color:var(--bg)
 }
-/* The Beginning of the NavBar/Header */
-header {
-    min-width:600px;
-    object-fit:fill;
-}
-.Top{
-    position:relative;
-    background-color:var(--bg1);
-    overflow:hidden;
-}
-
-.Top ul {
-    object-fit:contain;
-    position:sticky;
-    list-style-type:none;
-    text-decoration:none;
-    display:flex;
-    flex-direction:row;
-    justify-content:right;
-    font-size:130%;
-    padding:1%;
-    margin:-1%;
-}
-
-.Top > a {
-    position:relative;
-    color:Black;
-}
-
-.Top div h1 {
-
-    position:sticky;
-    left:10%;
-    bottom:10vh;
-    font-size:4vh;
-    overflow:hidden;
-}
-/*paragraph*/
-#The-Beginning p{
-    position:relative;
-    font-size:2vh;
-    top:10vh;
-    max-width:80%;
-    max-height:40%;
-}
-
 /*Flex for the About Me,Work and the Contact me*/
-.wrap{
+header {
+    position: relative;
+    width: 100%;
+    padding: 0%;
+    margin: 0;
+    background-color:black;
+}
+
+#Horiseon{
+    overflow:hidden;
+    width:auto;
+}
+#header {
+    display: flex;
+    position: relative;
+}
+
+header h1 {
+    position: relative;
+    font-size: 300%;
+    color:red;
+    padding-left: 6%;
+    width:auto;
+}
+
+#htmll img{
     position:relative;
-    display:flex;
-    flex-direction:column;
-    padding:0;
-    margin-top:20%;
-    margin-bottom:20%;
-    gap:300px;
-    bottom:43vh;
-}
-.wrap ul li{
-    list-style-type:square;
-    color:white;
-    font-size:4vh;
-}
-/*Image of One Piece, it is also the background image--Ignore Image*/
-#Middle .ace img{
-    overflow:hidden;
-    position:absolute;
-    min-width:400px;
-    max-width:1000px;
-    height:30vh;
-    top:40vh;
-    z-index:-1;
-    opacity:0.2;
+    left:-1.8%;
+    width:60%;
 }
 
-.col{
-    overflow:hidden;
-    flex:25%;
-    max-width:50%;
-    padding:0 4px;
+#java img{
+    position:relative;
+    left:-1.8%;
+    width:60%;
 }
 
-.col2{
-    overflow:hidden;
-    flex:25%;
-    max-width:50%;
-    padding:0 4px;
-}
-.col #demo img {
+.bar {
     position:absolute;
-    overflow:hidden;
-    top:90vh;
-    left:20px;
-    max-width:450px;
-    height:292px;
-    max-height:292px
-}
-.col #c img{
-    position:absolute;
-    top:107vh;
-    left:57vh;
-    max-width:450px;
-    height:150px;
-    min-height:150px;
-    max-height:150px;
+    display: flex;
+    font-size: 150%;
+    text-align: right;
+    right: 10%;
+    top: 25%
 }
 
-.col2 #demo2 img{
-    position:absolute;
-    top:89vh;
-    left:57vh;
-    max-width:265px;
-    height:150px;
-    max-height:200px
+.bar a {
+    text-decoration: none;
+    color: red; 
 }
 
-.col2 #demo3 img{
-    position:absolute;
-    top:103.35vh;
-    left:90vh;
-    max-width:300px;
-    height:180px;
-    min-height:150px;
-    max-height:180px;
+#Picofme {
+    display: block;
+    width: 10%;
+    height: 20%;
 }
-@media screen and (max-width:800px){
-    .col {
-        background-color:white;
-        flex:50%;
-        max-width:50px;
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size:120%;
+}
+
+article {
+    text-align: center;
+    padding-top: 5%;
+}
+
+article h2 {
+    color:black;
+    font-size: 250%;
+    padding: 10px;
+}
+
+article p {
+    color:black;
+    font-size: 140%;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+#Work  {
+    position: relative;
+    background-color:var(--bg);
+    bottom: 12%;
+}
+
+article h1{
+    position:relative;
+    font-size:200%;
+}
+
+#Contact {
+    padding: 20%;
+    text-align:left;
+}
+
+#Contact nav h2{
+    background:black;
+    color:red;
+    font-size:220%;
+}
+
+#Contact a {
+    font-size: 150%;
+    text-decoration: none;
+    color:black; 
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        width: 110%;
     }
-}
+    header h1 {
+        font-size: 210%;
+    }
+    .bar {
+        font-size: 110%;
+    }
+    #Picofme {
+        width: 110%;
+        height: 20%;
+        border-bottom: 21px solid var(--bg1);
+    }
+    article p {
+        font-size: 115%;
+    }
 
-@media screen and (max-width:500px){
-    body{
-        background-color:white;
+
+    #htmll img {
+        width: 60%;
+        height: 60%;
+      }
+    .java img {
+        flex: 1;
+        width: 60%;
+        height: 60%;
+      }
+  }
+@media screen and (max-width: 768px) {
+    header {
+        width: 110%;
     }
-    .col{
-        flex:100%;
-        max-width:100%;
+    header h1 {
+        font-size: 210%;
     }
-}
+    .bar{
+        font-size: 110%;
+    }
+    #PicofMe {
+        width: 40%;
+        height: 20%;
+    }
+    article p {
+        font-size: 110%;
+    }
+
+    #Work{
+    width:60%;
+    height:60%;
+      }
+  }
